@@ -16,6 +16,8 @@ class Spotify:
         self.sad_list = "spotify:playlist:37i9dQZF1DX7gIoKXt0gmx"            # id for sad emotion playlist
         self.surprise_list = "spotify:playlist:37i9dQZEVXcLwZK5DvMjT9"       # id for surprise emotion playlist
 
+        self.call_refresh()
+
     def get_device_id(self):
         # print ("Getting user's device ID")
 
@@ -28,7 +30,7 @@ class Spotify:
         self.device_id = response_json["devices"][0]["id"]
 
     def play_angry(self):
-        # print ("Playing angry music >:(")
+        print ("Playing angry music >:(")
 
         query = "https://api.spotify.com/v1/me/player/play?{}".format(self.device_id)
         data = json.dumps({"context_uri": self.angry_list,
@@ -39,7 +41,7 @@ class Spotify:
                                                       "Authorization": "Bearer {}".format(self.spotify_token)})
 
     def play_happy(self):
-        # print ("Playing happy music :)")
+        print ("Playing happy music :)")
 
         query = "https://api.spotify.com/v1/me/player/play?{}".format(self.device_id)
         data = json.dumps({"context_uri": self.happy_list,
@@ -50,7 +52,7 @@ class Spotify:
                                                       "Authorization": "Bearer {}".format(self.spotify_token)})
 
     def play_neutral(self):
-        # print ("Playing neutral music :|")
+        print ("Playing neutral music :|")
 
         query = "https://api.spotify.com/v1/me/player/play?{}".format(self.device_id)
         data = json.dumps({"context_uri": self.neutral_list,
@@ -61,7 +63,7 @@ class Spotify:
                                                       "Authorization": "Bearer {}".format(self.spotify_token)})
 
     def play_sad(self):
-        # print ("Playing sad music :(")
+        print ("Playing sad music :(")
 
         query = "https://api.spotify.com/v1/me/player/play?{}".format(self.device_id)
         data = json.dumps({"context_uri": self.sad_list,
@@ -72,7 +74,7 @@ class Spotify:
                                                       "Authorization": "Bearer {}".format(self.spotify_token)})
 
     def play_surprise(self):
-        # print ("Playing surprise music :O")
+        print ("Playing surprise music :O")
 
         query = "https://api.spotify.com/v1/me/player/play?{}".format(self.device_id)
         data = json.dumps({"context_uri": self.surprise_list,
