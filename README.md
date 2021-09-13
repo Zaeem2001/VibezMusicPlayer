@@ -11,10 +11,10 @@ Before I continue, if you are new to the world of artificial intelligence (AI), 
 
 Artificial intelligence is essentially a simulation of human intelligence, the way we act and think, through a machine. Machine learning is a subset of AI focused on teaching machines with algorithms that analyse data in order improve the accuracy of the AI. Computer vision is another a subset of AI with a more precise focus on obtaining information through exclusively images and video. Just because machine learning and computer vision are both subsets of AI doesn't mean that one isn't used without the other. In fact, machine learning is responsible for improving the accuracy of image detection and recognition in computer vision and thus making it more efficient. Now deep learning is a subset of machine learning. It uses neural networks to automate part of the learning process which allows it to learn from a larger dataset. I encourage you to do your own research and learn more about these subjects in detail, especially when a lot of this information can be found online (and for free).
   
-             / Machine Learning -- Deep Learning -- Neural Networks
-          AI 
-             \
-              Computer Vision
+                                                      / Machine Learning -- Deep Learning -- Neural Networks
+                                                   AI 
+                                                      \
+                                                        Computer Vision
      
 ### How does it work?
 
