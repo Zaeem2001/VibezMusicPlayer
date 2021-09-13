@@ -15,4 +15,18 @@ Artificial intelligence is essentially a simulation of human intelligence, the w
      
 ### How does it work?
 
-This program is purely software and requires no hardware to use/run. There are 2 important libaries and a framework being used: TKinter, OpenCV, and Keras. TKinter is a Python GUI package, it was used to build the interface of the program. The program starts by capturing and detecting the user's face in realtime with the help of OpenCV, a computer vision library used to process images and videos. The facial detection is done through the CascadeClassifier class which uses a Haar Cascade to compare and recognize the front of a human face. The information from the user's face is then passed on to Keras, a deep learning framework. Keras uses its different libraries to process the data from the user's face and compares it to a (trained) model of possible human emotions. It lists the probability of each emotion currently being displayed and the program chooses the most likely option. The guessed emotion is then displayed on top of the video capture, along with other useful information, in realtime. Finally, when the user presses the "play music" button the program will send a request to the Spotify server and start playing the specified playlist on the user's current device (just like in my [Spotiplayer project](https://github.com/Zaeem2001/SpotifyMusicPlayer).
+This program is purely software and requires no hardware to use/run. There are 2 important libaries and a framework being used: TKinter, OpenCV, and Keras. TKinter is a Python GUI package, it was used to build the interface of the program. The program starts by capturing and detecting the user's face in realtime with the help of OpenCV, a computer vision library used to process images and videos. The facial detection is done through the CascadeClassifier class which uses a Haar Cascade to compare and recognize the front of a human face. The information from the user's face is then passed on to Keras, a deep learning framework. Keras uses its different libraries to process the data from the user's face and compares it to a (trained) model of possible human emotions. It lists the probability of each emotion currently being displayed and the program chooses the most likely option. The guessed emotion is then displayed on top of the video capture, along with other useful information, in realtime. Finally, when the user presses the "play music" button the program will send a request to the Spotify server and start playing the specified playlist on the user's current device (just like in my [Spotiplayer project](https://github.com/Zaeem2001/SpotifyMusicPlayer)).
+
+### How do I use it?
+
+1. Copy the files from this repository to your PC and open them in a Python IDE of your choice (I recommend PyCharm).
+
+2. Make sure you have the necessary libaries installed on your PC: TKinter, PIL, OpenCV, numpy, and TensorFlow (some of these are already included in Python as base libraries).
+
+3. Make sure you have the Spotify desktop application installed and running on your PC along with an authorization token.
+
+4. Finally, run the main Python script (Emotion+Music.py).
+
+*See my [Spotiplayer project](https://github.com/Zaeem2001/SpotifyMusicPlayer) for a guide on how to get an authorization token for the Spotify part of the application.*
+
+### Special thanks to Karan Sethi who provided the emotion detection models for everybody to use! Here's a [link](https://github.com/karansjc1) to their GitHub profile.
