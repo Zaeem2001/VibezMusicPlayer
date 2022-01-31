@@ -38,3 +38,7 @@ This program is purely software and requires no hardware to use/run. There are 2
 
 ### Special thanks to Karan Sethi who provided the emotion detection models for everybody to use!                                                                       
 Here's a [link](https://github.com/karansjc1) to their GitHub profile.
+
+
+### Visit [my website](https://zaeem2001.github.io/projects/vibez.html) to see my project in action!
+
